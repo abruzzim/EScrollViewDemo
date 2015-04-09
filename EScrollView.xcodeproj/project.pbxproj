@@ -14,6 +14,7 @@
 		AF49BC931AD5631800FA95E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF49BC921AD5631800FA95E9 /* Images.xcassets */; };
 		AF49BC961AD5631800FA95E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF49BC941AD5631800FA95E9 /* LaunchScreen.xib */; };
 		AF49BCA21AD5631800FA95E9 /* EScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF49BCA11AD5631800FA95E9 /* EScrollViewTests.m */; };
+		AF49BCAD1AD5660E00FA95E9 /* EScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF49BCAC1AD5660E00FA95E9 /* EScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,9 @@
 		AF49BC9B1AD5631800FA95E9 /* EScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF49BCA01AD5631800FA95E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF49BCA11AD5631800FA95E9 /* EScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EScrollViewTests.m; sourceTree = "<group>"; };
+		AF49BCAB1AD5660E00FA95E9 /* EScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EScrollView.h; sourceTree = "<group>"; };
+		AF49BCAC1AD5660E00FA95E9 /* EScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EScrollView.m; sourceTree = "<group>"; };
+		AF49BCAE1AD72E6600FA95E9 /* EScrollView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EScrollView-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				AF49BC8A1AD5631800FA95E9 /* AppDelegate.m */,
 				AF49BC8C1AD5631800FA95E9 /* ViewController.h */,
 				AF49BC8D1AD5631800FA95E9 /* ViewController.m */,
+				AF49BCAB1AD5660E00FA95E9 /* EScrollView.h */,
+				AF49BCAC1AD5660E00FA95E9 /* EScrollView.m */,
 				AF49BC8F1AD5631800FA95E9 /* Main.storyboard */,
 				AF49BC921AD5631800FA95E9 /* Images.xcassets */,
 				AF49BC941AD5631800FA95E9 /* LaunchScreen.xib */,
@@ -98,6 +104,7 @@
 			children = (
 				AF49BC861AD5631800FA95E9 /* Info.plist */,
 				AF49BC871AD5631800FA95E9 /* main.m */,
+				AF49BCAE1AD72E6600FA95E9 /* EScrollView-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -222,6 +229,7 @@
 				AF49BC8E1AD5631800FA95E9 /* ViewController.m in Sources */,
 				AF49BC8B1AD5631800FA95E9 /* AppDelegate.m in Sources */,
 				AF49BC881AD5631800FA95E9 /* main.m in Sources */,
+				AF49BCAD1AD5660E00FA95E9 /* EScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

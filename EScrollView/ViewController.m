@@ -26,7 +26,7 @@
     imageView.clipsToBounds = YES;
     
     self.testScrollView = [[EScrollView alloc] initWithFrame:self.view.bounds];
-    self.testScrollView.maximumZoomScale = 2;
+    self.testScrollView.maximumZoomScale = 2.0;
     self.testScrollView.delegate = self;
     self.testScrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.testScrollView.contentSize = imageView.frame.size;
@@ -36,7 +36,7 @@
     [self.testScrollView addViewForZooming:imageView];
     [self.testScrollView scaleToFit];
     [self.view addSubview:self.testScrollView];
-    
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,16 +51,23 @@
 
 // Return all of the interface orientations that the view controller supports.
 //
-//- (NSUInteger)supportedInterfaceOrientations {};
+- (NSUInteger)supportedInterfaceOrientations {
+    NSLog(@"%%ViewController-I-TRACE, -supportedInterfaceOrientations called.");
+    return UIInterfaceOrientationMaskAll;
+};
 
 // Return the interface orientation to use when presenting the view controller.
 //
-//- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {};
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    NSLog(@"%%ViewController-I-TRACE, -preferredInterfaceOrientationForPresentation called.");
+    return UIInterfaceOrientationPortrait;
+};
 
 /*
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    NSLog(@"%%ViewController-I-TRACE, -shouldAutorotateToInterfaceOrientation: called.");
     return YES;
 }
- */
+*/
 
 @end
